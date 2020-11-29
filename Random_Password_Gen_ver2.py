@@ -1,5 +1,7 @@
 # a shorter method
 
+charlist='ABCDEFGHIKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*+-'
+
 #creating an empty list
 passwd=[]
 
