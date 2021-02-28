@@ -1,0 +1,38 @@
+body {
+	background-image: url(BG_warm_for_index_webpage.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: purple; 
+	font-family: 'Lucida Handwriting',  verdana;
+
+}
+
+
+a:link, a:visited{
+	color: white;
+	padding: 10px 2px;
+	text-align: center;
+	background-color: darkturquoise;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover, a:active{
+	background-color: paleturquoise;
+	color: black;
+}
+
+#booklist{
+
+	list-style-type: square;
+
+}
+
+
+
+
+
