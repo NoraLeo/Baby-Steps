@@ -1,0 +1,6 @@
+class Solution:
+    def average(self, salary: List[int]) -> float:
+        low_sal= min(salary)
+        high_sal= max(salary)
+        average = round(((sum(salary))-(low_sal + high_sal)) / (len(salary)-2), 5)
+        return average
