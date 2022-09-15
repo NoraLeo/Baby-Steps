@@ -1,0 +1,29 @@
+import random
+
+def gen_random_int(number, seed):
+    
+    random.seed(seed) #initializing the random number generator
+    result = []
+    
+    #in order for the list to give n integers, we need to do n iterations. 
+    
+    while True:
+        
+        #randomly choosing a number from 0 to n-1.
+        some_number = random.randint(0, number-1)
+        
+        #preventing repetition of elements in the list, as the random generator module randint() would generate the same number at times.
+        if some_number not in result:
+            result.append(some_number)
+        
+        #if the number of elements in the list reaches n, the loop stops.
+        if len(result) == number:
+            break
+    #after the list is formed, we shuffle the elements (optional, but not sure why it does not match the answer.)
+    random.shuffle(result)
+    
+    #storing list
+    return result
+
+output = gen_random_int(10, 100)
+print(output)
