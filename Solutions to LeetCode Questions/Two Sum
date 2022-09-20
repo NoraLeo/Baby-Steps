@@ -1,0 +1,18 @@
+import random
+
+def twoSum(self, nums: List[int], target: int) -> List[int]:
+	while True:
+		num2 = random.sample(nums, 2)
+    total = sum(num2)
+    indices = []
+   	if total == target:
+			for i in range(2):
+      	place = nums.index(num2[i])
+        indices.append(place)
+      break
+	return sorted(indices)
+	
+#this test case does not go through
+the_list = [3,3]
+result = two_sum(the_list, 6)
+print(result)
